@@ -47,6 +47,18 @@ function activate_valq_promo_reg() {
 }
 
 /**
+ * The code that runs during plugin update.
+ * This action is documented in includes/class-wc-order-view-updater.php
+ */
+function update_valq_promo_reg() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-valq-promo-reg-updater.php';
+	$updater = new ValQ_Promo_Reg_Updater( __FILE__ );
+	$updater->set_username( 'vbiweb' );
+	$updater->set_repository( 'valq-promo-reg' );
+	$updater->initialize();
+}
+
+/**
  * The code that runs during plugin deactivation.
  * This action is documented in includes/class-valq-promo-reg-deactivator.php
  */
@@ -80,3 +92,5 @@ function run_valq_promo_reg() {
 
 }
 run_valq_promo_reg();
+
+update_valq_promo_reg();

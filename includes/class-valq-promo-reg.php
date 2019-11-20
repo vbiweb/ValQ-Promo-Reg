@@ -173,6 +173,11 @@ class Valq_Promo_Reg {
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
 
+		$this->loader->add_action( 'init' , $plugin_public, 'add_promo_registration_form_shortcode' );
+
+		$this->loader->add_action( 'wp_ajax_valq_promo_reg_create_order' , $plugin_public, 'valq_promo_reg_create_order' );
+		$this->loader->add_action( 'wp_ajax_nopriv_valq_promo_reg_create_order' , $plugin_public, 'valq_promo_reg_create_order' );
+
 	}
 
 	/**

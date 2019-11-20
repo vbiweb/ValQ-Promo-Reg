@@ -2,3 +2,164 @@
  * All of the CSS for your public-facing functionality should be
  * included in this file.
  */
+
+ .valq-promo-reg-fields{
+	background-color: #F8F8F8 !important;
+	font-size: 16px;
+	color: #000000 !important;
+	border-radius: 2px;
+	border: 1px solid #cdcdcd !important;
+	padding: 18px 50px 20px !important;
+	height: 50px;
+	width: 100%;
+	-webkit-transition: all .7s ease;
+	-moz-transition: all .7s ease;
+	-o-transition: all .7s ease;
+	transition: all .7s ease;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+}
+
+.valq-promo-reg-fields.lname{
+	padding:18px 20px !important;
+}
+
+.valq-promo-reg-fields:focus{
+    background-color: #ffffff !important;
+    -webkit-box-shadow: unset;
+    -moz-box-shadow: unset;
+    -o-box-shadow: unset;
+    -ms-box-shadow: unset;
+    box-shadow: unset;
+}
+
+#valq-promo-reg-form i.fa,
+#valq-promo-reg-form-no-code i.fa{
+	position: absolute;
+	left: 15px;
+	font-size: 24px;
+	pointer-events: none;
+	color:#cdcdcd;
+	margin-top: 11px;
+	z-index: 1;
+}
+
+.valq-promo-reg-select-container .select2-selection{
+	height: 50px !important;
+}
+
+.valq-promo-reg-select-container .select2-selection__rendered{
+	font-size: 16px;
+	background: #f8f8f8;
+	border-radius: 2px;
+	padding: 10px 20px 10px 50px !important;
+}
+
+.valq-promo-reg-select-container .select2-selection__rendered:focus{
+	background: #ffffff;
+}
+
+.valq-promo-reg-select-container .select2-selection__arrow{
+	padding: 10px 20px !important;
+	height: 50px !important;		
+}
+
+.valq-promo-reg_submit,
+.valq-promo-code_submit{
+	cursor:pointer;
+    background-color: #1babe2;
+    border:unset;
+    border-radius: 2px;
+    font-size: 18px;
+    color: #ffffff;
+    width: 100%;
+    font-weight: bold;
+    padding: 15px 30px !important;
+    letter-spacing: 0.6px;
+    margin: 10px 0px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.valq-promo-reg_terms{
+	margin:10px 0px;
+}
+.valq-promo-reg_terms h5.terms-header{
+	background:#26aae1;
+	color:white;
+	padding:10px;
+	margin:0px;
+}
+.valq-promo-reg_terms .terms-text{
+	width:100%;
+	height:150px;
+	overflow-y: scroll;
+	padding: 5px;
+	border: #888 solid 1px;
+	border-radius: 2px;
+	padding:0px 0px 5px 0px;
+	font-size:10px;
+}
+
+.valq-promo-reg_submit:hover{
+    background-color: #0c71c3;
+}
+
+form#valq-promo-reg-form label.error,
+form#valq-promo-reg-form-no-code label.error,
+div#valq-promo-reg_error{
+	font-size: 12px;
+	color:red;
+}
+
+form#valq-promo-reg-form-no-code label.error{
+	display: block;
+	text-align: center;
+}
+
+div#valq-promo-reg_error{
+	text-align: center;
+}
+
+#valq-promo-reg_error{
+	color:#ff0000;
+}
+
+@media only screen and (min-width: 480px){
+	.valq-promo-reg-fields.fname,
+	label#valq-promo-reg_fname-error{
+		float:left;
+		width:49%;
+	}
+
+	.valq-promo-reg-fields.lname,
+	label#valq-promo-reg_lname-error{
+		float:right;
+		width:49%;
+	}
+}
+
+p.disclaimer{
+	text-align: center;
+	font-size: 12px;
+}
+
+#valq-promo-reg_promocode{
+	border: 3px dashed green !important;
+	color: green !important;
+	padding: 10px 50px !important;
+	height: unset;
+}
+
+#valq-promo-reg_promocode i{
+	margin-top:0px !important;
+	color:green !important;
+}
+
+#valq-promo-reg_promocode .benefits{
+	font-size: 12px;
+}
